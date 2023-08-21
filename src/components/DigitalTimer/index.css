@@ -1,0 +1,256 @@
+/* Write your CSS here */
+.digital-timer-container {
+  background-image: linear-gradient(to bottom, #ffffff, #cffcf1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .digital-timer-container {
+    background-image: linear-gradient(to right, #ffffff, #cffcf1);
+  }
+}
+
+.digital-timer {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-weight: 550;
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .digital-timer {
+    font-size: 48px;
+  }
+}
+
+.timer-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-button-container {
+    flex-direction: row;
+    max-width: 1140px;
+  }
+}
+
+.timer-bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-position: center;
+  background-size: cover;
+  width: 320px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .timer-bg-container {
+    width: 450px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .timer-bg-container {
+    width: 600px;
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .timer-bg-container {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+.timer-container {
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 576px) {
+  .timer-container {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .timer-container {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+.timer25 {
+  color: #00d9f5;
+  font-family: 'Roboto';
+  font-weight: 550;
+  font-size: 28px;
+  margin: 0;
+}
+
+@media (min-width: 576px) {
+  .timer25 {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .timer25 {
+    font-size: 48px;
+  }
+}
+
+.paused {
+  margin: 0px;
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-weight: 550;
+  font-size: 16px;
+}
+
+@media (min-width: 576px) {
+  .paused {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .paused {
+    font-size: 28px;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.start-reset-container {
+  display: flex;
+  align-items: center;
+}
+
+.start-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-margin {
+  margin-right: 30px;
+}
+
+.play-image {
+  width: 30px;
+  margin-right: 10px;
+}
+
+@media (min-width: 576px) {
+  .play-image {
+    width: 40px;
+  }
+}
+
+.start {
+  color: #0f172a;
+  font-family: 'Roboto';
+  font-weight: 550;
+  font-size: 28px;
+}
+
+@media (min-width: 576px) {
+  .start {
+    font-size: 32px;
+  }
+}
+
+.set-timer-limit {
+  color: #1e293b;
+  font-family: 'Roboto';
+  font-weight: 550;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .set-timer-limit {
+    font-size: 23px;
+  }
+}
+
+.limit-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.on-decrement {
+  background-color: transparent;
+  border: none;
+  color: #0f172a;
+  font-size: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (min-width: 576px) {
+  .on-decrement {
+    font-size: 60px;
+  }
+}
+
+.limit-value-container {
+  background-image: linear-gradient(to right, #00f5a0, #00d9f5);
+  width: 120px;
+  height: 50px;
+  border: none;
+  color: #0f172a;
+  font-size: 30px;
+  font-weight: 550;
+  font-family: 'Roboto';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+@media (min-width: 576px) {
+  .limit-value-container {
+    width: 140px;
+    height: 60px;
+    font-size: 33px;
+  }
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
