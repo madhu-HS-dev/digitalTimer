@@ -100,7 +100,7 @@ class DigitalTimer extends Component {
       ? 'https://assets.ccbp.in/frontend/react-js/pause-icon-img.png'
       : 'https://assets.ccbp.in/frontend/react-js/play-icon-img.png'
 
-    const altAtrributeToImage = isTimeRunning ? 'pause icon' : 'play icon'
+    const alt = isTimeRunning ? 'pause icon' : 'play icon'
 
     const textToDisplay = isTimeRunning ? 'Pause' : 'Start'
     const labelText = isTimeRunning ? 'Running' : 'Paused'
@@ -127,11 +127,7 @@ class DigitalTimer extends Component {
                   className="btn"
                   onClick={this.onToggleStart}
                 >
-                  <img
-                    src={imageToDisplay}
-                    alt={altAtrributeToImage}
-                    className="play-image"
-                  />
+                  <img src={imageToDisplay} alt={alt} className="play-image" />
                   <h1 className="start">{textToDisplay}</h1>
                 </button>
               </div>
